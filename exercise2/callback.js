@@ -14,7 +14,7 @@ const readFileAsArray = (file, cb) => {
   });
 };
 
-readFileAsArray("./numbers.txt", (err, data) => {
+readFileAsArray("./numbers.txt", (err, lines) => {
   if (err) throw err;
   console.log(data);
   return data;
