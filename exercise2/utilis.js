@@ -6,9 +6,9 @@ const utilis = {
     return numbers;
   },
   countOdd: (num) => {
+    let oddsAmount = 0;
     const oddNumbers = num.filter((num) => num % 2 !== 0);
-    const oddSum = oddNumbers.reduce((a, b) => a + b);
-    return oddSum;
+    return oddNumbers.length;
   },
 };
 

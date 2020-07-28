@@ -8,6 +8,6 @@ fs.readFile("./numbers.txt", "utf8", function (err, data) {
   }
   const numbersArray = utilisModule.splitByNewLine(data);
   console.log(numbersArray);
-  const sumOfOdds = utilisModule.countOdd(numbersArray);
-  console.log(sumOfOdds);
+  const amountOfOdds = utilisModule.countOdd(numbersArray);
+  console.log(amountOfOdds);
 });
