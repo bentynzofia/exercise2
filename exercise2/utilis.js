@@ -1,8 +1,8 @@
 /*jshint esversion: 6 */
-let utilis = {
+const utilis = {
   splitByNewLine: fileData => {
-  lines = fileData.split("\n");
-  return lines;
+  lines = fileData.split('\n');
+  console.log(lines);
 },
   countOdd: x => {
   let oddsSum = 0;
