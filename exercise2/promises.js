@@ -16,9 +16,8 @@ const readFileAsArray = (file) => {
   });
 };
 
-
 readFileAsArray("./numbers.txt")
-  .then(numbersArray => {
-     console.log(utilisModule.countOdd(numbersArray));
-    })
+  .then((numbersArray) => {
+    console.log(utilisModule.countOdd(numbersArray));
+  })
   .catch();

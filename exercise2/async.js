@@ -13,7 +13,7 @@ async function readFileAsArray(file) {
       console.log(amountOfOdds);
       return amountOfOdds;
     });
-  } catch(err) {
+  } catch (err) {
     console.log(err);
   } finally {
     console.log("Done");
@@ -21,5 +21,5 @@ async function readFileAsArray(file) {
 }
 
 (async () => {
-  const lines = await readFileAsArray('./numbers.txt');
+  const lines = await readFileAsArray("./numbers.txt");
 })();

@@ -12,7 +12,7 @@ const readFileAsArray = (file, cb) => {
     const amountOfOdds = utilisModule.countOdd(numbersArray);
     //console.log(amountOfOdds);
 
-    cb(err,amountOfOdds);
+    cb(err, amountOfOdds);
   });
 };
 
