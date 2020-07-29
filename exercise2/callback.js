@@ -8,15 +8,15 @@ const readFileAsArray = (file, cb) => {
       return console.log(err);
     }
     const numbersArray = utilisModule.splitByNewLine(data);
-    console.log(numbersArray);
+    //console.log(numbersArray);
     const amountOfOdds = utilisModule.countOdd(numbersArray);
-    console.log(amountOfOdds);
+    //console.log(amountOfOdds);
 
-    cb(arr,amountOfOdds);
+    cb(err,amountOfOdds);
   });
 };
 
 readFileAsArray("./numbers.txt", (err, lines) => {
   if (err) throw err;
-  console.log(data);
+  console.log(lines);
 });
