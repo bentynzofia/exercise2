@@ -1,9 +1,9 @@
 /*jshint esversion: 6 */
 const utilisModule = require("./utilis.js");
-fs = require("fs");
+const fs = require("fs");
 
 const readFileAsArray = (file, cb) => {
-  fs.readFile(file, "utf8", function (err, data) {
+  fs.readFile(file, "utf8", (err, data) => {
     if (err) {
       return console.log(err);
     }
@@ -11,11 +11,12 @@ const readFileAsArray = (file, cb) => {
     console.log(numbersArray);
     const amountOfOdds = utilisModule.countOdd(numbersArray);
     console.log(amountOfOdds);
+
+    cb(arr,amountOfOdds);
   });
 };
 
 readFileAsArray("./numbers.txt", (err, lines) => {
   if (err) throw err;
   console.log(data);
-  return data;
 });
