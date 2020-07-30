@@ -9,7 +9,7 @@ const readFileAsArray = (file, cb) => {
     const numbersArray = utilisModule.splitByNewLine(data);
     const amountOfOdds = utilisModule.countOdd(numbersArray);
 
-    cb(amountOfOdds);
+    cb(undefined, amountOfOdds);
   });
 };
 
