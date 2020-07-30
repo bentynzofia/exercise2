@@ -1,4 +1,4 @@
-//jshint esversion: 8
+
 const utilisModule = require("./utilis.js");
 
 const fs = require("fs");
@@ -9,10 +9,11 @@ async function showFile(file) {
   const numbersArray = utilisModule.splitByNewLine(content.toString());
   const amountOfOdds = utilisModule.countOdd(numbersArray);
 
-  //console.log(numbersArray);
-  //console.log(amountOfOdds);
-
   return amountOfOdds;
 }
 
-showFile("./numbers.txt");
+
+(async () => {
+  const lines = await readFileAsArray.showFile("./numbers.txt");
+  console.log(lines);
+})();
