@@ -9,8 +9,8 @@ async function showFile(file) {
   const numbersArray = utilisModule.splitByNewLine(content.toString());
   const amountOfOdds = utilisModule.countOdd(numbersArray);
 
-  console.log(numbersArray);
-  console.log(amountOfOdds);
+  //console.log(numbersArray);
+  //console.log(amountOfOdds);
 
   return amountOfOdds;
 }

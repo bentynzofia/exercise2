@@ -9,7 +9,7 @@ const readFileAsArray = (file) => {
         reject(err);
       }
       const numbersArray = utilisModule.splitByNewLine(data);
-      console.log(numbersArray);
+      //console.log(numbersArray);
 
       resolve(numbersArray);
     });

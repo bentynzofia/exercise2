@@ -10,7 +10,7 @@ async function readFileAsArray(file) {
       }
       const numbersArray = utilisModule.splitByNewLine(data);
       const amountOfOdds = utilisModule.countOdd(numbersArray);
-      console.log(amountOfOdds);
+      //console.log(amountOfOdds);
       return amountOfOdds;
     });
   } catch (err) {
