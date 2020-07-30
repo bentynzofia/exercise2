@@ -14,6 +14,6 @@ async function showFile(file) {
 
 
 (async () => {
-  const lines = await readFileAsArray.showFile("./numbers.txt");
+  const lines = await showFile("./numbers.txt");
   console.log(lines);
 })();
